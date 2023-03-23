@@ -41,11 +41,11 @@ jobs:
         cache: 'npm'
         cache-dependency-path: '**/package.json'
         
-    - run: yarn install
-      working-directory: client
+#     - run: yarn install
+#       working-directory: client
 
-    - run: yarn build
-      working-directory: client
+#     - run: yarn build
+#       working-directory: client
       
         
         
