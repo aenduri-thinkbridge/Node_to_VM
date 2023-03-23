@@ -41,6 +41,14 @@ jobs:
         cache: 'npm'
         cache-dependency-path: '**/package-lock.json'
         
+    - run: yarn install
+      working-directory: client
+
+    - run: yarn build
+      working-directory: client
+      
+        
+        
     - name: npm install, build, and test
       run: |
         npm install
